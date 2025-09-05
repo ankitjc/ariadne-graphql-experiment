@@ -1,9 +1,17 @@
 type Query {
   hello: String!
   books: [Book!]!
+  conversations: [Conversation!]!
 }
 
 type Book {
   title: String!
   author: String!
+}
+
+type Conversation {
+  text: String!
+  provider: String!
+  model: String!
+  emojis: String!
 }
